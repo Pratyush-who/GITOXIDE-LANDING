@@ -23,9 +23,9 @@ const Home = () => {
               Join thousands of citizens making their communities better through blockchain-powered civic engagement.
             </p>
             <div className="flex flex-wrap gap-6">
-              <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg text-white font-semibold hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
-                Get Started
-              </button>
+              <a href="http://localhost:5173/report" target="_self" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg text-white font-semibold hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+                Start Reporting Issues
+              </a>
               <button className="px-8 py-4 bg-gray-800/50 backdrop-blur-sm rounded-lg text-white font-semibold hover:bg-gray-800/70 transition-all border border-purple-500/20">
                 Watch Demo
               </button>
@@ -125,9 +125,9 @@ const Home = () => {
             <p className="text-xl text-gray-300 mb-12">
               Join thousands of active citizens who are already making their communities better through CiviChain.
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg text-white font-semibold hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+            <a href="http://localhost:5173/report" target="_self" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg text-white font-semibold hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
               Start Reporting Issues
-            </button>
+            </a>
           </div>
         </div>
       </div>
