@@ -8,10 +8,10 @@ import PublicFeed from './pages/PublicFeed';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-900">
+      <div className="min-h-screen" style={{ backgroundColor: '#F6F5FA' }}>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/report" element={<ReportIssue />} />
           <Route path="/feed" element={<PublicFeed />} />

@@ -2,7 +2,11 @@ import React from 'react';
 
 const TextInput = ({ label, id, name, value, onChange, placeholder }) => (
   <div>
-    <label className="block text-purple-400 font-medium mb-2" htmlFor={id}>
+    <label 
+      className="block font-medium mb-2" 
+      htmlFor={id}
+      style={{ color: '#212121' }}
+    >
       {label}
     </label>
     <input
@@ -12,7 +16,14 @@ const TextInput = ({ label, id, name, value, onChange, placeholder }) => (
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500"
+      className="w-full rounded-xl px-4 py-3 focus:outline-none transition-all"
+      style={{ 
+        backgroundColor: '#F6F5FA', 
+        border: '2px solid #CFDECA',
+        color: '#212121'
+      }}
+      onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
+      onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
     />
   </div>
 );

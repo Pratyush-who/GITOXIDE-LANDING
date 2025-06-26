@@ -2,7 +2,11 @@ import React from 'react';
 
 const IssueCategorySelect = ({ value, onChange, name }) => (
   <div>
-    <label className="block text-purple-400 font-medium mb-2" htmlFor="category">
+    <label 
+      className="block font-medium mb-2" 
+      htmlFor="category"
+      style={{ color: '#212121' }}
+    >
       Issue Category
     </label>
     <select
@@ -10,7 +14,14 @@ const IssueCategorySelect = ({ value, onChange, name }) => (
       name={name}
       value={value}
       onChange={onChange}
-      className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500"
+      className="w-full rounded-xl px-4 py-3 focus:outline-none transition-all"
+      style={{ 
+        backgroundColor: '#F6F5FA', 
+        border: '2px solid #CFDECA',
+        color: '#212121'
+      }}
+      onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
+      onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
     >
       <option value="">Select a category</option>
       <option value="infrastructure">Infrastructure</option>

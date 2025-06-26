@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,9 +9,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #111827;
+  color-scheme: light;
+  color: #212121;
+  background-color: #F6F5FA;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,16 +21,17 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #212121;
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: #FFFA03;
 }
 
 body {
-  font-family: "Urbanist", sans-serif;
-  background-color: #DBE9F2;
+  font-family: "Inter", sans-serif;
+  background-color: #F6F5FA;
   color: #212121;
   margin: 0;
   padding: 0;
@@ -41,40 +42,99 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #212121;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border-radius: 12px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #FFFA03;
+  color: #212121;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.25s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  background-color: #CFDECA;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #FFFA03;
+  outline-offset: 2px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+#root {
+  padding: 0;
+}
+
+/* App-wide styles for new theme */
+.app-card {
+  background: #F6F5FA;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid #DBE7F0;
+}
+
+.app-btn {
+  background: #FFFA03;
+  color: #212121;
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.app-btn:hover {
+  background: #CFDECA;
+}
+
+.app-btn-secondary {
+  background: #DBE7F0;
+  color: #212121;
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.app-btn-secondary:hover {
+  background: #CFDECA;
+}
+
+input, textarea, select {
+  background: #F6F5FA;
+  border: 1px solid #DBE7F0;
+  border-radius: 12px;
+  color: #212121;
+  padding: 0.75rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #FFFA03;
+}
+
+.card {
+  background: #F6F5FA;
+  border: 1px solid #DBE7F0;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.image-container {
+  border-radius: 12px;
+  overflow: hidden;
 }

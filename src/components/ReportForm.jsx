@@ -95,54 +95,71 @@ const ReportForm = () => {
   };
 
   return (
-    <form className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 mb-12 relative" onSubmit={handleSubmit}>
-      <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-2xl opacity-20 blur"></div>
-      <div className="relative">
-        <div className="space-y-6">
-          <IssueCategorySelect
-            value={formData.category}
-            onChange={handleChange}
-            name="category"
-          />
-          <TextInput
-            label="Issue Title"
-            id="title"
-            name="title"
-            value={formData.title}
-            onChange={handleChange}
-            placeholder="Brief description of the issue"
-          />
-          <DescriptionTextarea
-            label="Detailed Description"
-            id="description"
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-            rows={4}
-            placeholder="Provide more details about the issue..."
-          />
-          <TextInput
-            label="Location"
-            id="location"
-            name="location"
-            value={formData.location}
-            onChange={handleChange}
-            placeholder="Enter the address or location details"
-          />
-          <PhotoUpload onChange={handleImageChange} previews={previews} onRemove={handleRemoveImage} filenames={filenames} />
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-lg px-6 py-3 font-medium hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 shadow-lg hover:shadow-purple-500/25 disabled:opacity-60"
+    <form 
+      className="rounded-2xl p-8 mb-12"
+      style={{ backgroundColor: '#DBE7F0' }}
+      onSubmit={handleSubmit}
+    >
+      <div className="space-y-6">
+        <IssueCategorySelect
+          value={formData.category}
+          onChange={handleChange}
+          name="category"
+        />
+        <TextInput
+          label="Issue Title"
+          id="title"
+          name="title"
+          value={formData.title}
+          onChange={handleChange}
+          placeholder="Brief description of the issue"
+        />
+        <DescriptionTextarea
+          label="Detailed Description"
+          id="description"
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+          rows={4}
+          placeholder="Provide more details about the issue..."
+        />
+        <TextInput
+          label="Location"
+          id="location"
+          name="location"
+          value={formData.location}
+          onChange={handleChange}
+          placeholder="Enter the address or location details"
+        />
+        <PhotoUpload onChange={handleImageChange} previews={previews} onRemove={handleRemoveImage} filenames={filenames} />
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full rounded-xl px-6 py-3 font-medium transition-all transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-opacity-50 disabled:opacity-60"
+          style={{ 
+            backgroundColor: '#FFFA03', 
+            color: '#212121',
+            border: 'none'
+          }}
+          onMouseEnter={(e) => e.target.style.backgroundColor = '#CFDECA'}
+          onMouseLeave={(e) => e.target.style.backgroundColor = '#FFFA03'}
+        >
+          {loading ? 'Submitting...' : 'Submit Report'}
+        </button>
+        {status && (
+          <div 
+            className={`mt-4 text-center font-medium rounded-xl p-3 ${
+              status.includes('success') 
+                ? 'text-green-700' 
+                : 'text-red-700'
+            }`}
+            style={{ 
+              backgroundColor: status.includes('success') ? '#CFDECA' : '#FFE6E6'
+            }}
           >
-            {loading ? 'Submitting...' : 'Submit Report'}
-          </button>
-          {status && (
-            <div className={`mt-4 text-center font-medium ${status.includes('success') ? 'text-green-400' : 'text-red-400'}`}>
-              {status}
-            </div>
-          )}
-        </div>
+            {status}
+          </div>
+        )}
       </div>
     </form>
   );
