@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: #FFFA03;
+  color: #EFF0A3;
 }
 
 body {
@@ -52,7 +52,7 @@ button {
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #FFFA03;
+  background-color: #EFF0A3;
   color: #212121;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -64,7 +64,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 2px solid #FFFA03;
+  outline: 2px solid #EFF0A3;
   outline-offset: 2px;
 }
 
@@ -81,11 +81,11 @@ button:focus-visible {
   background: #F6F5FA;
   border-radius: 16px;
   padding: 1.5rem;
-  border: 1px solid #DBE7F0;
+  border: 1px solid #DBDFE9;
 }
 
 .app-btn {
-  background: #FFFA03;
+  background: #EFF0A3;
   color: #212121;
   border-radius: 12px;
   font-weight: 500;
@@ -99,7 +99,7 @@ button:focus-visible {
 }
 
 .app-btn-secondary {
-  background: #DBE7F0;
+  background: #DBDFE9;
   color: #212121;
   border-radius: 12px;
   font-weight: 500;
@@ -114,7 +114,7 @@ button:focus-visible {
 
 input, textarea, select {
   background: #F6F5FA;
-  border: 1px solid #DBE7F0;
+  border: 1px solid #DBDFE9;
   border-radius: 12px;
   color: #212121;
   padding: 0.75rem 1rem;
@@ -124,12 +124,12 @@ input, textarea, select {
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: #FFFA03;
+  border-color: #EFF0A3;
 }
 
 .card {
   background: #F6F5FA;
-  border: 1px solid #DBE7F0;
+  border: 1px solid #DBDFE9;
   border-radius: 16px;
   padding: 1.5rem;
 }

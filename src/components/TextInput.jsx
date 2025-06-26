@@ -19,11 +19,11 @@ const TextInput = ({ label, id, name, value, onChange, placeholder }) => (
       className="w-full rounded-xl px-4 py-3 focus:outline-none transition-all"
       style={{ 
         backgroundColor: '#F6F5FA', 
-        border: '2px solid #CFDECA',
+        border: '2px solid #DBDFE9',
         color: '#212121'
       }}
-      onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
-      onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
+      onFocus={(e) => e.target.style.borderColor = '#EFF0A3'}
+      onBlur={(e) => e.target.style.borderColor = '#DBDFE9'}
     />
   </div>
 );

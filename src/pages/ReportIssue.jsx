@@ -25,35 +25,35 @@ const ReportIssue = () => {
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div 
                 className="rounded-2xl p-6"
-                style={{ backgroundColor: '#DBE7F0' }}
+                style={{ backgroundColor: '#DBDFE9' }}
               >
                 <h3 className="text-xl font-semibold mb-6" style={{ color: '#212121' }}>What Happens Next?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold"
-                      style={{ backgroundColor: '#FFFA03', color: '#212121' }}
+                      style={{ backgroundColor: '#EFF0A3', color: '#212121' }}
                     >1</span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Our AI system verifies and categorizes your report</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold"
-                      style={{ backgroundColor: '#FFFA03', color: '#212121' }}
+                      style={{ backgroundColor: '#EFF0A3', color: '#212121' }}
                     >2</span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Report is logged on the blockchain for transparency</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold"
-                      style={{ backgroundColor: '#FFFA03', color: '#212121' }}
+                      style={{ backgroundColor: '#EFF0A3', color: '#212121' }}
                     >3</span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Relevant authorities are notified automatically</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold"
-                      style={{ backgroundColor: '#FFFA03', color: '#212121' }}
+                      style={{ backgroundColor: '#EFF0A3', color: '#212121' }}
                     >4</span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>You receive updates on the progress</p>
                   </li>
@@ -69,28 +69,28 @@ const ReportIssue = () => {
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-2 h-2 rounded-full"
-                      style={{ backgroundColor: '#FFFA03' }}
+                      style={{ backgroundColor: '#EFF0A3' }}
                     ></span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Be specific about the location and issue</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-2 h-2 rounded-full"
-                      style={{ backgroundColor: '#FFFA03' }}
+                      style={{ backgroundColor: '#EFF0A3' }}
                     ></span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Include clear, well-lit photos when possible</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-2 h-2 rounded-full"
-                      style={{ backgroundColor: '#FFFA03' }}
+                      style={{ backgroundColor: '#EFF0A3' }}
                     ></span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Provide context about when you noticed the issue</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span 
                       className="mt-1 w-2 h-2 rounded-full"
-                      style={{ backgroundColor: '#FFFA03' }}
+                      style={{ backgroundColor: '#EFF0A3' }}
                     ></span>
                     <p style={{ color: '#212121', opacity: '0.8' }}>Mention if it's a recurring problem</p>
                   </li>

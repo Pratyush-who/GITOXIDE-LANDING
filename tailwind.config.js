@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        aliceblue: "#DBE9F2",
-        honeydew: "#CFEDCA",
-        vanilla: "#FFFA03",
-        eerieblack: "#212121",
-        ghostwhite: "#F6F5FA",
+        bluegray: "#DBDFE9",
+        greenish: "#CFDECA",
+        vanilla: "#EFF0A3",
+        dark: "#212121",
+        light: "#F6F5FA",
       },
       fontFamily: {
         sans: ["Urbanist", "sans-serif"],

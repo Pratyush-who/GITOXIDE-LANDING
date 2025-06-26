@@ -192,7 +192,7 @@ const PublicFeed = () => {
         </h1>
 
         {/* Filter Section */}
-        <div className="p-6 rounded-2xl mb-8" style={{ backgroundColor: '#DBE7F0' }}>
+        <div className="p-6 rounded-2xl mb-8" style={{ backgroundColor: '#DBDFE9' }}>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <input
               type="text"
@@ -200,11 +200,11 @@ const PublicFeed = () => {
               className="rounded-xl px-4 py-2 focus:outline-none transition-all"
               style={{ 
                 backgroundColor: '#F6F5FA', 
-                border: '2px solid #CFDECA',
+                border: '2px solid #DBDFE9',
                 color: '#212121'
               }}
-              onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
-              onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
+              onFocus={(e) => e.target.style.borderColor = '#EFF0A3'}
+              onBlur={(e) => e.target.style.borderColor = '#DBDFE9'}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -212,11 +212,11 @@ const PublicFeed = () => {
               className="rounded-xl px-4 py-2 focus:outline-none transition-all"
               style={{ 
                 backgroundColor: '#F6F5FA', 
-                border: '2px solid #CFDECA',
+                border: '2px solid #DBDFE9',
                 color: '#212121'
               }}
-              onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
-              onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
+              onFocus={(e) => e.target.style.borderColor = '#EFF0A3'}
+              onBlur={(e) => e.target.style.borderColor = '#DBDFE9'}
               value={categoryFilter}
               onChange={(e) => setCategoryFilter(e.target.value)}
             >
@@ -230,11 +230,11 @@ const PublicFeed = () => {
               className="rounded-xl px-4 py-2 focus:outline-none transition-all"
               style={{ 
                 backgroundColor: '#F6F5FA', 
-                border: '2px solid #CFDECA',
+                border: '2px solid #DBDFE9',
                 color: '#212121'
               }}
-              onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
-              onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
+              onFocus={(e) => e.target.style.borderColor = '#EFF0A3'}
+              onBlur={(e) => e.target.style.borderColor = '#DBDFE9'}
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
             >
@@ -247,11 +247,11 @@ const PublicFeed = () => {
               className="rounded-xl px-4 py-2 focus:outline-none transition-all"
               style={{ 
                 backgroundColor: '#F6F5FA', 
-                border: '2px solid #CFDECA',
+                border: '2px solid #DBDFE9',
                 color: '#212121'
               }}
-              onFocus={(e) => e.target.style.borderColor = '#FFFA03'}
-              onBlur={(e) => e.target.style.borderColor = '#CFDECA'}
+              onFocus={(e) => e.target.style.borderColor = '#EFF0A3'}
+              onBlur={(e) => e.target.style.borderColor = '#DBDFE9'}
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
             >

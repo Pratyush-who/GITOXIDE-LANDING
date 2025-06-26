@@ -10,10 +10,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #DBDFE9);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #CFDECA);
 }
 
 @keyframes logo-spin {
@@ -36,7 +36,7 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #212121;
 }
 
 /* App-wide styles for new theme */
@@ -44,38 +44,38 @@
 .app-card {
   background: #F6F5FA;
   border-radius: 1rem;
-  box-shadow: 0 2px 8px 0 rgba(33,33,33,0.06);
+  box-shadow: 0 2px 8px 0 #DBDFE9;
   padding: 1.5rem;
 }
 
 .app-btn {
-  background: #FFFA03;
+  background: #EFF0A3;
   color: #212121;
   border-radius: 0.75rem;
   font-weight: 500;
   padding: 0.75rem 2rem;
-  box-shadow: 0 2px 8px 0 rgba(33,33,33,0.06);
+  box-shadow: 0 2px 8px 0 #DBDFE9;
   transition: background 0.2s, box-shadow 0.2s;
   border: none;
 }
 
 .app-btn:hover {
-  background: #CFEDCA;
-  box-shadow: 0 4px 16px 0 rgba(33,33,33,0.10);
+  background: #CFDECA;
+  box-shadow: 0 4px 16px 0 #DBDFE9;
 }
 
 input, textarea, select {
   background: #F6F5FA;
-  border: 1px solid #DBE9F2;
+  border: 1px solid #DBDFE9;
   border-radius: 0.75rem;
   color: #212121;
   padding: 0.75rem 1rem;
   font-family: "Urbanist", sans-serif;
   font-size: 1rem;
   outline: none;
-  box-shadow: 0 2px 8px 0 rgba(33,33,33,0.03);
+  box-shadow: 0 2px 8px 0 #DBDFE9;
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: #FFFA03;
+  border-color: #EFF0A3;
 }
